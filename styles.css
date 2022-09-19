@@ -32,6 +32,14 @@ a {
 a:hover {
     opacity: 0.75;
 }
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
 /* ----------Utilities---------- */
 .none {
     display: none;
@@ -130,4 +138,25 @@ a:hover {
         color: var(--firts-color);
         opacity: 0.75;
     }
+}
+/* ----------HeroImage---------- */
+.hero__image {
+    background-image: var(--hero-image); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: var(--hero-attachment); 
+}
+.hero__image--opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);  
+}
+.hero__image--title {
+    font-size: 7.5vw;
+    color: var(--hero-title-color);
 }
