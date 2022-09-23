@@ -5,7 +5,9 @@
     --black-color: #000;
     --link-color: #1259c3;
     --white-color: #fff;
+    --title-color: #333;
     --black-alpha-color: rgba(0, 0, 0, 0.3); /*  */
+    --white-alpha-color: rgba(255, 255, 255, 0.5);
     --font: 'Courier Prime';
     --header-height: 4rem;
     --max-width: 1200px;
@@ -84,8 +86,8 @@ img {
     filter:grayscale(1); 
  }
 .section__title { /* titulos de las secciones */
-    border-top: thin solid var(--first-color);/* linea delgada */
-    border-bottom: thin solid var(--first-color);
+    border-top: thin solid var(--second-color);/* linea delgada */
+    border-bottom: thin solid var(--second-color);
     width: 250px;
     margin: 2rem auto;
     padding: .5rem 1rem;
