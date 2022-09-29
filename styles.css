@@ -188,7 +188,33 @@ img {
     margin-bottom: 2rem;
 }
 /* ----------Contact---------- */
-/*  */
+.contact__card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact__card > svg path{
+    width: 2rem;
+    height: 2rem;
+    fill: var(--firts-color);
+}
+.contact__card > small {
+    margin-top: -1rem;
+}
+
+/* MEDIA QUERY - 768 px */
+@media screen and (min-width: 768px) {
+    .contact__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+    }
+}
 
 /* MEDIA QUERY - 1024 px */
 @media screen and (min-width: 1024px) {
@@ -240,5 +266,9 @@ img {
     .text-lg-right {
         text-align: right;
     }
-    
+    /* contact */
+    .contact__cards {
+        grid-template-columns: repeat(4, 24%); 
+        justify-content: space-between;
+    }
 }
