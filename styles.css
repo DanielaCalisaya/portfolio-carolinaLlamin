@@ -313,7 +313,7 @@ img {
 @media screen and (min-width: 768px) {
     .contact__cards {
         display: grid;
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: repeat(3, 30%);
         justify-content: space-between;
     }
 }
@@ -367,11 +367,6 @@ img {
     }
     .text-lg-right {
         text-align: right;
-    }
-    /* contact */
-    .contact__cards {
-        grid-template-columns: repeat(4, 24%); 
-        justify-content: space-between;
     }
     /* contact form */
     .contact__form {
