@@ -368,6 +368,10 @@ img {
     .text-lg-right {
         text-align: right;
     }
+    /* section curso */
+    .about .section__title { 
+        grid-column: span 3;
+    }
     /* contact form */
     .contact__form {
         display: grid;
