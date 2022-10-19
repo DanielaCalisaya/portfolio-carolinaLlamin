@@ -180,7 +180,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--hero-opacity-color);  /* ---------------------- */
+    background-color: var(--hero-opacity-color);  
 }
 .hero__image--title {
     font-size: 7.5vw;
@@ -189,6 +189,52 @@ img {
 /* ----------Section About---------- */
 .about > article { 
     margin-bottom: 2rem;
+}
+/* ----------Carousel---------- */
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.text-first-color { 
+    color: var(--firts-color);
+}
+.carousel {
+    margin: 2rem auto;
+    padding: 2rem 0;
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--carousel-bg-color);
+    overflow-x: hidden; /* no deslizarse a los lados */
+}
+.carousel input {
+    display: none;
+}
+.carousel .slides { /* 100% por cada slide */
+    padding-left: 0;
+    width: 200%;
+    display: flex;
+    list-style: none;
+    transition: transform 0.5s ease-in-out; /* se transladará en el eje X */
+}
+.carousel label {
+    border: medium solid var(--second-color);
+    border-radius: 50%;
+    display: inline-block; 
+    cursor: pointer;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 0.25rem;
+}
+#slide-1:checked ~ .slides { /* esta tilde es un selector de css que indica que tiene que mover el hermano que tiene al lado */
+    transform: translateX(0%);
+}
+#slide-2:checked ~ .slides {
+    transform: translateX(-50%);
+}
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2 {
+    background-color: var(--firts-color);
 }
 /* ----------Contact---------- */
 .contact__card {
