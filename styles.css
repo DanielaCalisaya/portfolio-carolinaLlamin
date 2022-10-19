@@ -180,7 +180,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--hero-opacity-color);  
+    background-color: var(--hero-opacity-color);  /* ---------------------- */
 }
 .hero__image--title {
     font-size: 7.5vw;
