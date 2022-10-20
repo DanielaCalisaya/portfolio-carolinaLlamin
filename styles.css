@@ -97,9 +97,9 @@ img {
     text-align: center;
     color: var(--title-color);
 }
-.none {
+/* .none {
     display: none;
-}
+} */
 /* ----------Header---------- */
 .header {
     position: fixed; 
@@ -309,6 +309,9 @@ img {
 .modal#gracias:target {
     opacity: 1;
     pointer-events: auto;
+}
+.none {
+    display: none;
 }
 /* ----------Modal---------- */
 .modal {

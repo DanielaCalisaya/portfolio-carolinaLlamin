@@ -27,7 +27,7 @@
 
     $form.addEventListener("submit", (e) => {
         e.preventDefault();
-        $loader.classList.remove("none"); /* se ve el loader, desp mandamos la peticion a este servicio */
+        $loader.classList.remove("none"); 
         fetch("https://formsubmit.co/ajax/llaminc704@gmail.com", {
             method: "POST",
             body: new FormData(e.target) /* q envie el formulario como tal, para el envio de los datos al servicio y obtengo los datos del e.target(q es el objeto que origina el evento) */
@@ -36,13 +36,12 @@
         .then(json => {
             console.log(json);
             location.hash = "#gracias"; /* el objeto location es el que controla todo lo que entra en la url de la barra de direccion del navegador, entonces que agregue el hash y el gracias, asi se activa la pantalla modal */
-            $form.reset(); /* el formulario se resetea */
+            $form.reset(); 
         })
         .catch(err => {
             console.log(err);
             let message = err.statusText || "Ocurrió un error al enviar, intenta nuevamente"
             $response.querySelector("h3").innerHTML = `Error ${err.status}:${message}` 
-            $loader.classList.add("none");
         }).finally(() => {
             $loader.classList.add("none"); /* independientemente del resultado de la respuesta esto se ejecutará  */
             setTimeout(() => {
