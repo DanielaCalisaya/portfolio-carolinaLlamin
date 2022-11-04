@@ -27,9 +27,10 @@ html {
     box-sizing: inherit;
 }
 body {
-    margin: 0;
+    margin: 0 auto; /*  */
     overflow-x: hidden;
     color: var(--firts-color);
+    max-width: 1440px; /*  */
 }
 a {
     color: var(--link-color);
@@ -85,9 +86,6 @@ img {
 .text-right {
     text-align: right;
 }
-.grey-scale { /* estilo de mi foto */
-    filter:grayscale(1); 
- }
 .section__title { /* titulos de las secciones */
     border-top: thin solid var(--second-color);/* linea delgada */
     border-bottom: thin solid var(--second-color);
@@ -173,7 +171,7 @@ img {
     background-position: center; 
     background-attachment: var(--hero-attachment); 
 }
-.hero__image--opacity {
+.hero__image--opacity { 
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -185,6 +183,9 @@ img {
 .hero__image--title {
     font-size: 7.5vw;
     color: var(--hero-title-color);
+}
+.hero__image--content { /* clase para el div de los testimonios */
+    width: 100%;
 }
 /* ----------Section About---------- */
 .about > article { 
