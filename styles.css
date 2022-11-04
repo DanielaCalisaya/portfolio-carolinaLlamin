@@ -9,9 +9,10 @@
     --gray-light-color: #f3f3f3;
     --gray-color: #ccc;
     --gray-dark-color: #666;
-    --black-alpha-color: rgba(0, 0, 0, 0.3); /*  */
+    --black-alpha-color: rgba(0, 0, 0, 0.3); 
     --white-alpha-color: rgba(255, 255, 255, 0.5);
-    --font: 'Courier Prime';
+    --font: 'Lora', serif;
+    --font-logo: 'Kolker Brush', cursive;
     --header-height: 4rem;
     --max-width: 1200px;
 }
@@ -71,6 +72,7 @@ img {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--white-color);
     background-color: var(--second-color);
 }
@@ -123,7 +125,7 @@ img {
     color: var(--first-color);
     font-family: var(--font-logo);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 .header__container__menu__btn {
@@ -251,7 +253,7 @@ img {
 .contact__card > svg path{
     width: 2rem;
     height: 2rem;
-    fill: var(--firts-color);
+    fill: var(--second-color);
 }
 .contact__card > small {
     margin-top: -1rem;
@@ -408,15 +410,6 @@ img {
     .full-lg-screen { 
         width: 100%;
         min-height: 100vh;
-    }
-    .text-lg-center {
-        text-align: center;
-    }
-    .text-lg-left {
-        text-align: left;
-    }
-    .text-lg-right {
-        text-align: right;
     }
     /* section curso */
     .about .section__title { 
